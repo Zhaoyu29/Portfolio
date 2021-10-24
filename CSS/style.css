@@ -1,0 +1,348 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Grid CSS */
+  #Photo{
+    margin: 20px 5%;
+    display: grid;
+    min-height: 400px;
+    height: 20vh;
+    grid-template-rows:  100% 55%;
+    grid-template-columns: 55% 55%;
+    grid-template-areas: "HomepagePhoto";
+}
+  
+  /* Category Grid CSS */
+
+  #HomepagePhoto {
+    grid-area: HomepagePhoto;
+    background-image: url("../images/IMG_2677.JPG");
+  }
+
+    #headline {
+      background-color: rgba(255,255,255,0.8);
+      position: absolute;
+      right: 100px;
+      top: 250px;
+      padding: 15px;
+      max-width: 550px;
+      z-index: 100;
+    }
+    .Photo {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center;
+      display: flex;
+      position: relative;
+    }
+    
+    /* Category Grid CSS */
+    
+    .subHeading {
+      text-align: center;
+      border-bottom: 2px solid black;
+      width: 300px;
+      margin: 50px auto;
+    }
+    
+    #works {
+      margin: 0px 5%;
+      display: grid;
+      grid-template-rows: 300px 300px 600px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+      "paulascher bulldog poster"
+      "georgiaaquarium georgiaaquarium poster"
+      "marta marta marta "
+      
+      ;
+    }
+    
+    #paulascher {
+      grid-area: paulascher;
+      background-image: url("../images/b4018178556047.5ca802d71db13.jpg");
+    
+    }
+    #bulldog {
+      grid-area: bulldog;
+      background-image: url("../images/Bulldog.png");
+    }
+    
+    #georgiaaquarium {
+      grid-area: georgiaaquarium;
+      background-image: url("../images/GA.png");
+    }
+    
+    #poster {
+      grid-area: poster;
+      background-image: url("../images/poster.jpg");
+    }
+    
+    #marta {
+      grid-area: marta;
+      background-image: url("../images/01.jpg");
+    }
+    
+    .works {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 5px;
+      cursor: pointer;
+      display: grid;
+      align-content: end;
+    }
+    
+    .heading {
+      background-color: rgba(0,0,0,0.7);
+      padding: 15px;
+      height: 25px;
+      color: white;
+      font-size: 18px;
+
+    }
+    
+  
+  
+  
+  /* Navigation CSS */
+  /* CHECK OUT THIS CODE BELOW IF YOU WANT TO GET A REFRESHER ON FLEX */
+  #navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+  }
+  #navBar h1 {
+    width: 20%;
+    font-weight: 100;
+  }
+  #navigation {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+  }
+  .icons img {
+    margin: 15px;
+    cursor: pointer;
+  }
+  .highlight {
+    color: #044d88;
+    font-weight: 700;
+  }
+  
+  /* Typography CSS */
+  
+  h2 {
+    font-size: 60px;
+    margin: 0px 0px;
+    color: #044d88;
+  }
+  
+  h3 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0px 0px;
+  }
+  
+  h4 {
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+  }
+  
+  
+  #headline p {
+    max-width: 350px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px 0px;
+    color: #636364;
+  }
+  
+
+.button {
+  background-color: #044d88;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed{
+	background: rgb(255, 255, 255);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+  margin: 0px 5%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #044d88;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #044d88;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #003375;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #044d88;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+  margin: 0px 3%;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #044d88;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #e7e7e7;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: #044d88;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #044d88;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #044d88;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #044d88;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
